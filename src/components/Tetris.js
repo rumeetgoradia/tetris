@@ -106,16 +106,22 @@ const Tetris = () => {
       <StyledTetris>
         <Stage stage={stage} />
         <aside>
-          {gameOver ? (
-            <Display gameOver={gameOver} text="Game Over" />
-          ) : (
-              <div>
-                <Display text={`Score: ${score}`} />
-                <Display text={`Rows: ${rows}`} />
-                <Display text={`Level: ${level}`} />
-              </div>
-            )}
-          <StartButton callback={startGame} />
+          <div className="heading">
+            <h1>TETRIS</h1>
+            <h2>Rumeet Goradia</h2>
+          </div>
+          <div className="buttons">
+            {gameOver ? (
+              <Display gameOver={gameOver} text="Game Over" />
+            ) : (
+                <div>
+                  <Display text={`Score: ${score}`} />
+                  <Display text={`Rows: ${rows}`} />
+                  <Display text={`Level: ${level}`} />
+                </div>
+              )}
+            <StartButton callback={startGame} />
+          </div>
         </aside>
       </StyledTetris>
     </StyledTetrisWrapper>

@@ -2,7 +2,20 @@ body {
   margin: 0;
 }
 
-@font-face {
-  font-family: 'Pixel', sans-serif;
-  src: url('./font/Pixel-LCD-7.woff');
+.heading {
+  color: whitesmoke;
+  font-family: 'Darker Grotesque', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 6rem;
+  margin: -2rem 0 -.5rem 0;
+}
+
+h2 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 2rem;
 }
