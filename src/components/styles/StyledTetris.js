@@ -8,31 +8,26 @@ export const StyledTetrisWrapper = styled.div`
     background: -webkit-radial-gradient(circle farthest-corner at 10% 20%, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
     background: radial-gradient(circle farthest-corner at 10% 20%, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     overflow: hidden;
-    display: flex;
-    // justify-items: center;
 `
 
 export const StyledTetris = styled.div`
     display: flex;
     align-items: center;
-    justify-items: center;
-    padding: 40px;
+    // padding: .5rem;
     margin: 0 auto;
-    width: 50%;
-    // height: 100%;
-    // max-width: 900px;
+    max-width: 100vw;
+    justify-content: center;
+    height: 100%;
 
     aside {
         width: 100%;
-        height: 100%;
-        // max-width: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 0 20px;
+        max-width: 200px;
+        display: block;
+        padding: 0 0 0 20px;
+        // height: 90%;
 
-        div {
-            width: 100%;
+        @media only screen and (max-width: 426px) {
+            max-width: 150px;
         }
     }
 `;
