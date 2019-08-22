@@ -22,8 +22,11 @@ export const StyledTetris = styled.div`
     aside {
         width: 100%;
         max-width: 200px;
-        display: block;
-        padding: 0 0 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        padding: 20px 0 20px 20px;
         // height: 90%;
 
         @media only screen and (max-width: 426px) {
